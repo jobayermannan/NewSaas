@@ -1,6 +1,11 @@
 {
   "extends": "next/core-web-vitals",
-  "rules": {
-    "react/jsx-key": "off"
-  }
+  "overrides": [
+    {
+      "files": ["src/sections/Pricing.tsx", "src/sections/Testimonials.tsx"],
+      "rules": {
+        "react/jsx-key": "off"
+      }
+    }
+  ]
 }
