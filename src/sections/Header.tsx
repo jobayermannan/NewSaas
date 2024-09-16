@@ -32,7 +32,7 @@ export const Header = () => {
               <a href="#pricing">Pricing</a>
               <a href="#">Help</a>
               <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
-                Get for free
+               <Link href="/signin"> Get for free</Link>
               </button>
             </nav>
           </div>

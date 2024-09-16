@@ -8,7 +8,7 @@ import {
   motion,
   useScroll,
   useTransform,
-  useMotionValueEvent,
+  
 } from "framer-motion";
 import { useRef } from "react";
 

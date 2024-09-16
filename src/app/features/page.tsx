@@ -3,9 +3,9 @@ import { Header } from "@/sections/Header";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import featureImage1 from "@/assets/feature1.png";
-import featureImage2 from "@/assets/feature2.png";
-import featureImage3 from "@/assets/feature3.png";
+import featureImage1 from "@/assets/feature1.jpg";
+// import featureImage2 from "@/assets/feature2.png";
+// import featureImage3 from "@/assets/feature3.png";
 
 export default function FeaturesPage() {
   const sectionRef = useRef(null);
@@ -43,7 +43,7 @@ export default function FeaturesPage() {
               className="feature-card p-6 bg-white rounded-lg shadow-md"
               style={{ translateY }}
             >
-              <Image src={featureImage2} alt="Task Tracking" width={100} height={100} />
+              <Image src="" alt="Task Tracking" width={100} height={100} />
               <h2 className="text-2xl font-bold mt-4">Task Tracking</h2>
               <p className="mt-2">Never miss a deadline with our advanced tracking tools.</p>
             </motion.div>
@@ -51,7 +51,7 @@ export default function FeaturesPage() {
               className="feature-card p-6 bg-white rounded-lg shadow-md"
               style={{ translateY }}
             >
-              <Image src={featureImage3} alt="Customizable Workflows" width={100} height={100} />
+              <Image src="" alt="Customizable Workflows" width={100} height={100} />
               <h2 className="text-2xl font-bold mt-4">Customizable Workflows</h2>
               <p className="mt-2">Tailor the app to suit your specific project needs.</p>
             </motion.div>
