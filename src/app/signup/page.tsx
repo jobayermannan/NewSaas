@@ -7,6 +7,7 @@ import { motion, useScroll } from "framer-motion";
 import springImage from "@/assets/spring.png";
 import Logo from "@/assets/logosaas.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const SignUpForm = () => {
   const authContext = useContext(AuthContext);
@@ -46,7 +47,7 @@ const SignUpForm = () => {
   return (
     <section
       ref={formRef}
-      className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] py-24 overflow-x-clip"
+      className="min-h-screen py-24 bg-[radial-gradient(ellipse_200%_100%_at_top_left,#3e51ff,#EAEEFE_100%)] overflow-x-clip"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="w-full md:w-2/3 lg:w-1/2 border-2 border-black p-6 bg-white rounded-lg">
@@ -159,7 +160,7 @@ const SignUpForm = () => {
           </div>
           <div className="flex justify-center items-center text-sm font-medium m-2">
             <p>
-              Already have an account? <span className="text-[#0F3DDE]">Sign In</span>
+              Already have an account? <Link href="/signin" className="text-[#0F3DDE]">Sign In</Link>
             </p>
           </div>
         </div>

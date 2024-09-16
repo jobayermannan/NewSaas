@@ -9,6 +9,11 @@
 
   .btn-primary {
     @apply bg-black text-white;
+   
+  }
+
+  .btn-primary:hover {
+    @apply bg-[#333];
   }
 
   .btn-text {
@@ -42,3 +47,4 @@
     @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
 }
+

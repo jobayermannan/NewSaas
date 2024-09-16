@@ -7,6 +7,7 @@ import { motion, useScroll } from "framer-motion";
 import cogImage from "@/assets/cog.png";
 import Logo from "@/assets/logosaas.png";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const SignInForm = () => {
@@ -45,7 +46,7 @@ const SignInForm = () => {
   return (
     <section
       ref={formRef}
-      className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] py-24 overflow-x-clip"
+      className="min-h-screen py-24 bg-[radial-gradient(ellipse_200%_100%_at_top_left,#3e51ff,#EAEEFE_100%)] overflow-x-clip"
     >
       <div className="container mx-auto bg- flex flex-col md:flex-row items-center justify-between">
         <div className="w-full  md:w-2/3 lg:w-1/2 border-2 border-black p-6 bg-white rounded-lg">
@@ -121,7 +122,7 @@ const SignInForm = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-black text-white py-2 rounded"
+              className="w-full bg-black text-white btn-primary py-2 rounded"
             >
               Sign In
             </button>
@@ -138,7 +139,7 @@ const SignInForm = () => {
           </div>
           <div className="flex justify-center items-center text-sm font-medium m-2">
             <p>
-              Have an account? <span className="text-[#0F3DDE]">Sign Up</span>
+              Have an account? <Link href="/signup" className="text-[#0F3DDE]">Sign Up</Link>
             </p>
           </div>
         </div>
