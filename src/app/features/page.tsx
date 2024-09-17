@@ -1,5 +1,7 @@
 'use client'
 
+import Button from '@/components/Button'
+import { Footer } from '@/sections/Footer'
 import { Header } from '@/sections/Header'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -96,17 +98,13 @@ export default function FeaturePage() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <Link
-            href="#"
-            className="inline-flex items-center  justify-center "
-          >
-            <button className=' btn btn-primary'>
-              Get Started for Free
-            </button>
-          </Link>
+          
+            <Button href='signin' >Get started for free</Button>
+          
         </motion.div>
       </main>
     </div>
+    <Footer/>
     </>
   )
 }

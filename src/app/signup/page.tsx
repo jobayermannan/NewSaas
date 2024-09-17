@@ -5,9 +5,9 @@ import google from "@/assets/icons8-google-48.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { motion, useScroll } from "framer-motion";
 import springImage from "@/assets/spring.png";
-import Logo from "@/assets/logosaas.png";
-import Image from "next/image";
+
 import Link from "next/link";
+import LogoButton from "@/components/LogoButton";
 
 const SignUpForm = () => {
   const authContext = useContext(AuthContext);
@@ -51,10 +51,7 @@ const SignUpForm = () => {
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="w-full md:w-2/3 lg:w-1/2 border-2 border-black p-6 bg-white rounded-lg">
-          <div className="flex justify-center items-center gap-[3px]">
-            <Image src={Logo} alt="Saas Logo" height={40} width={40} />
-            <h1 className="nav-title">Ziro</h1>
-          </div>
+         <LogoButton/>
           <div className="w-full h-auto py-10">
             <h1 className="w-full h-auto gap-1.5 opacity-100 text-left text-2xl md:text-3xl font-medium leading-tight mt-4">
               Join Us Today!
